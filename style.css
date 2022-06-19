@@ -1,0 +1,22 @@
+.right, .content {
+    flex: 50%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+div {
+    display: block;
+}
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-desktop.png);
+}
+
