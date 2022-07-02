@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,p{
+    font-size: 16px;
+}
+
+
+.main {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-bottom: 0%;
+    min-height: 100vh;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-desktop.png);
+
+}
+
+.content {
+    margin-top: 18%;
+    text-align: left;
+}
+
+.content h1,
+p {
+    color: white;
+    width: 70%;
+    margin: auto;
+}
+
+.content h1 {
+    line-height: 60px;
+    font-size: 49px;
+}
+
+.content p {
+    margin-top: 3%;
+    font-weight: 16px;
+}
+
+.right,
+.content {
+    flex: 50%;
+}
+
+.right {
+    padding-bottom: 8%;
+    margin-bottom: 1%;
+}
+
+.try {
+    padding: 2% 12%;
+    margin: 120px 0px 25px;
+    display: block;
+    border: 1px solid hsl(248, 32%, 49%);
+    border-radius: 10px;
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.153);
+}
+
+.login {
+    color: hsl(249, 10%, 26%);
+    width: fit-content;
+    padding: 20px 20px 40px 20px;
+    border: 1px solid hsl(0, 100%, 74%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.153);
+}
+
+.login.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.login.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.login.error small {
+	visibility: visible;
+}
+
+
+
+
+
+#fname,
+#lname,
+#email,
+#pword {
+    padding: 20px 270px 20px 25px;
+    margin: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.claim {
+    padding: 20px 159px 20px 159px;
+    margin: 10px;
+    border: 1px solid hsl(154, 59%, 51%);
+    border-radius: 5px;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    font-weight: 700;
+    box-shadow: inset 0px -3px 0px 1px rgba(0, 0, 0, 0.153);
+    cursor: pointer;
+}
+
+.login small {
+    font-size: 12px;
+}
+
+.terms a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+ .by small{
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width:1440px) and (min-width:1001px) {
+
+    .content h1,
+    p {
+        margin-top: 6%;
+        margin-right: 10%;
+    }
+
+    .content p {
+        font-weight: 14px;
+    }
+
+    .try {
+        width: 80%;
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width:1000px) {
+    .main {
+        margin-bottom: 0%;
+        flex-direction: column;
+        background-image: url(./images/bg-intro-mobile.png);
+    }
+
+    .main .content {
+        margin: auto;
+    }
+
+    .main .content h1 {
+        text-align: center;
+        line-height: 40px;
+        font-size: 30px;
+        margin-top: 10%;
+    }
+
+    .main .content p {
+        text-align: center;
+    }
+
+    .main .right {
+        margin-bottom: 0%;
+    }
+
+    .main .try {
+        width: 35%;
+        padding: 20px 30px;
+        margin: 70px 0px 20px 0px;
+        display: inline-table;
+    }
+
+    .main .login {
+        width: 35%;
+        margin: auto;
+        padding: 20px 20px 40px 20px;
+    }
+
+    .main #fname,
+    .main #lname,
+    .main #email,
+    .main #pword {
+        padding: 5% 25% 5% 5%;
+        margin: 10px
+    }
+
+    .main .claim {
+        padding: 15px 58px;
+    }
+
+    .main .login small {
+        font-size: xx-small;
+    }
+}
+
+@media (max-width:768px) {
+    .main .right {
+        margin-bottom: 5%;
+    }
+
+    .main .try {
+        width: 60%;
+        margin: 50px 0px 20px 0px;
+        display: inline-table;
+    }
+
+    .main .login {
+        width: 60%;
+        margin: auto;
+        padding: 20px 20px 40px 20px;
+    }
+
+    .main #fname,
+    .main #lname,
+    .main #email,
+    .main #pword {
+        padding: 5% 45% 5% 5%;
+        margin: 10px
+    }
+
+    .main .claim {
+        padding: 5% 27%
+    }
+}
+
+@media (max-width:425px) {
+    h1 {
+        padding-top: 12%;
+    }
+
+    .main .try {
+        width: 90%;
+        margin: 50px 0px 20px 0px;
+        display: inline-table;
+    }
+
+    .main .login {
+        width: 90%;
+        margin: auto;
+        padding: 20px 20px 40px 20px;
+    }
+
+    .main #fname,
+    .main #lname,
+    .main #email,
+    .main #pword {
+        padding: 5% 35% 5% 5%;
+        margin: 10px
+    }
+
+    .main .claim {
+        padding: 6% 22%;
+    }
+}
+
+@media (max-width:375px) {
+
+    h1,
+    p {
+        width: 85%;
+    }
+
+    .content p {
+        font-weight: 14px;
+    }
+
+    .login #fname,
+    .login #lname,
+    .login #email,
+    .login #pword {
+        padding: 5% 26% 5% 5%;
+    }
+
+    .main .claim {
+        padding: 6% 17%;
+    }
+}
+
+@media (max-width:320px) {
+
+    .login #fname,
+    .login #lname,
+    .login #email,
+    .login #pword {
+        padding: 15px 22px 15px 15px;
+    }
+}
